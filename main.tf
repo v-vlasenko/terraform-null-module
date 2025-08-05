@@ -29,7 +29,7 @@ resource "null_resource" "resource" {
 }
 
 resource "null_resource" "resource2" {
-  count = 100
+  count = 1000
   triggers = {
     number = "${var.trigger}"
   }
