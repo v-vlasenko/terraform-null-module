@@ -29,7 +29,7 @@ resource "null_resource" "resource" {
 }
 
 resource "random_pet" "test_pet_with_name" {
-  count = 111
+  count = 120
   keepers = {
     vlad = "Keeperz"
   }
