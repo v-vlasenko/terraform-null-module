@@ -28,9 +28,10 @@ resource "null_resource" "resource" {
   }
 }
 
-resource "null_resource" "resource2" {
-  triggers = {
-    number = "${var.trigger}"
+resource "random_pet" "test_pet_with_name" {
+  count = 111
+  keepers = {
+    vlad = "Keeperz"
   }
 }
 
