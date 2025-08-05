@@ -17,15 +17,6 @@
  * 
  */
 
-variable "env" {}
-
-locals {
-  aws_default_tags = {
-    Env = "environmentz"
-    ScalrProvider = "environmentz-aws"
-  }
-}
-
 # Primary AWS provider for us-east-1
 provider "aws" {
   region = "us-east-1"
